@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <nav role='navigation'>
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" id="menu-checkbox"/>
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <a href="index.html"><li><img src="path/to/home-icon.png" alt="home" class="menu-icon">Home</li></a>
+            <a href="#"><li><img src="path/to/instruction-icon.png" alt="Instruction" class="menu-icon">Instruction</li></a>
+            <a href="#"><li><img src="path/to/settings-icon.png" alt="settings" class="menu-icon">Settings</li></a>
+            <a href="#"><li><img src="path/to/info-icon.png" alt="Info" class="menu-icon">Info</li></a>
+            <a href="about.html"><li><img src="path/to/developer-icon.png" alt="About Developer" class="menu-icon">About <br>Developer</li></a>
+            <a href="#"><li><img src="path/to/support-icon.png" alt="Support Developer" class="menu-icon">Support Developer<br>/Remove <br>Ads</li></a>
+          </ul>
+        </div>
+      </nav>
+    <header>
+        <div class="header-container">
+          <h1>ایک لفظ</h1>
+        </div>
+      </header>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="me.jpg" alt="Avatar" style="width:200px;height:250px;">
+          </div>
+          <div class="flip-card-back">
+            <h2>Shaikh Azan Asim</h2>
+            <p>BSCS FAST NU</p>
+            <p>Batch K21</p>
+            <p><a href="#"><img src="linkin.png"  class="flip-icon"></a> <a href="#"><img src="linkin.png"  class="flip-icon"></a> <a href="#"><img src="linkin.png"  class="flip-icon"></a></p>
+        
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اردو ورڈل</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <nav role='navigation'>
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" id="menu-checkbox"/>
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <a href="#"><li><img src="path/to/instruction-icon.png" alt="Instruction" class="menu-icon">Instruction</li></a>
+        <a href="#"><li><img src="path/to/settings-icon.png" alt="settings" class="menu-icon">Settings</li></a>
+        <a href="#"><li><img src="path/to/info-icon.png" alt="Info" class="menu-icon">Info</li></a>
+        <a href="about.html"><li><img src="path/to/developer-icon.png" alt="About Developer" class="menu-icon">About <br>Developer</li></a>
+        <a href="#"><li><img src="path/to/support-icon.png" alt="Support Developer" class="menu-icon">Support Developer<br>/Remove <br>Ads</li></a>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="header-container">
+      <div class="header-images">
+        <a href="#" id="image1-link">
+          <img src="hint.png" alt="Image 1" class="header-image">
+        </a>
+        <a href="#" id="image2-link">
+          <img src="heartplus.png" alt="Image 2" class="header-image">
+        </a>
+      </div>
+      <h1>ایک لفظ</h1>
+    </div>
+  </header>
+
+
+
+  <main id="content">
+    <div class="game">
+      <div class="feedback" id="feedback">
+        <!-- Feedback area -->
+      </div>
+      <div id="time-left"></div>
+      <div>
+        <p id="attempts">❤️: 7</p>
+      </div>
+      <div id="input-fields">
+        <input type="text" id="letter4" maxlength="1" size="1" />
+        <input type="text" id="letter3" maxlength="1" size="1" />
+        <input type="text" id="letter2" maxlength="1" size="1" />
+        <input type="text" id="letter1" maxlength="1" size="1" />
+      </div>
+      <div class="keyboard-container">
+        <div class="keyboard-row keyboard-row-1" id="keyboard">
+        </div>
+        <div class="keyboard-row keyboard-row-1" id="keyboard">
+          <button onclick="addLetterToGuess('ض', 1)">ض</button>
+          <button onclick="addLetterToGuess('ص', 2)">ص</button>
+          <button onclick="addLetterToGuess('غ', 3)">غ</button>
+          <button onclick="addLetterToGuess('ژ', 4)">ژ</button>
+          <button onclick="addLetterToGuess('ڑ', 5)">ڑ</button>
+          <button onclick="addLetterToGuess('ٹ', 6)">ٹ</button>
+          <button onclick="addLetterToGuess('ث', 7)">ث</button>
+          <button onclick="addLetterToGuess('ح', 8)">ح</button>
+          <button onclick="addLetterToGuess('ئ', 9)">ئ</button>
+          <button onclick="addLetterToGuess('ظ', 10)">ظ</button>
+          <button onclick="addLetterToGuess('ط', 11)">ط</button>
+        </div>
+        <div class="keyboard-row keyboard-row-2" id="keyboard">
+          <button onclick="addLetterToGuess('ق', 12)">ق</button>
+          <button onclick="addLetterToGuess('و', 13)">و</button>
+          <button onclick="addLetterToGuess('ع', 14)">ع</button>
+          <button onclick="addLetterToGuess('ر', 15)">ر</button>
+          <button onclick="addLetterToGuess('ت', 16)">ت</button>
+          <button onclick="addLetterToGuess('ے', 17)">ے</button>
+          <button onclick="addLetterToGuess('ء', 18)">ء</button>
+          <button onclick="addLetterToGuess('ی', 19)">ی</button>
+          <button onclick="addLetterToGuess('ہ', 20)">ہ</button>
+          <button onclick="addLetterToGuess('پ', 21)">پ</button>
+        </div>
+        <div class="keyboard-row keyboard-row-3" id="keyboard">
+          <button onclick="addLetterToGuess('ا', 22)">ا</button>
+          <button onclick="addLetterToGuess('آ', 23)">آ</button>
+          <button onclick="addLetterToGuess('س', 24)">س</button>
+          <button onclick="addLetterToGuess('ڈ', 25)">ڈ</button>
+          <button onclick="addLetterToGuess('د', 26)">د</button>
+          <button onclick="addLetterToGuess('ف', 27)">ف</button>
+          <button onclick="addLetterToGuess('گ', 28)">گ</button>
+          <button onclick="addLetterToGuess('ھ', 29)">ھ</button>
+          <button onclick="addLetterToGuess('ج', 30)">ج</button>
+          <button onclick="addLetterToGuess('ک', 31)">ک</button>
+          <button onclick="addLetterToGuess('ل', 32)">ل</button>
+        </div>
+        <div class="keyboard-row keyboard-row-4" id="keyboard">
+          <button onclick="addLetterToGuess('←', 33)">➔</button>
+          <button onclick="addLetterToGuess('ذ', 34)">ذ</button>
+          <button onclick="addLetterToGuess('ز', 35)">ز</button>
+          <button onclick="addLetterToGuess('ش', 36)">ش</button>
+          <button onclick="addLetterToGuess('خ', 37)">خ</button>
+          <button onclick="addLetterToGuess('چ', 38)">چ</button>
+          <button onclick="addLetterToGuess('ب', 39)">ب</button>
+          <button onclick="addLetterToGuess('ں', 40)">ں</button>
+          <button onclick="addLetterToGuess('ن', 41)">ن</button>
+          <button onclick="addLetterToGuess('م', 42)">م</button>
+        </div>
+      </div>
+      <button class ="submit-button" id="submit-button" onclick="submitGuess()">جواب دیں</button>
+      <div class="attempts" id="attempts">
+        <!-- Display remaining attempts -->
+      </div>
+      <div class="previous-guesses" id="previous-guesses">
+        <!-- Display previous guesses -->
+        <div class="feedback-container">
+        </div>
+      </div>
+      
+    </div>
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1/dist/confetti.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("menu-checkbox").addEventListener("change", function() {
+      document.getElementById("content").classList.toggle("blur", this.checked);
+    });
+  </script>
+</body>
+</html>
